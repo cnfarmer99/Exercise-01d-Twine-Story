@@ -1,164 +1,208 @@
 {
-    "passages": [
-      {
-        "text": "You are standing at the end of a road before a small brick building. Around you is a forest.  A small stream flows out of the building and down a gully.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Road",
-        "pid": "1",
-        "position": {
-          "x": "412",
-          "y": "189"
+  "passages": [
+    {
+      "text": "You walk in the door to an old tavern. In front of you there's a bar top.  To your left some old pictures.  To your right a pool table.\n\nGo Straight\nGo Left\nGo Right",
+      "links": [
+        {
+          "name": "Go Straight ",
+          "link": " Bar Top",
+          "pid": "2"
+        },
+        {
+          "name": "Go Left ",
+          "link": " Old Pictures",
+          "pid": "3"
+        },
+        {
+          "name": "Go Right ",
+          "link": " Pool Table",
+          "pid": "4"
         }
-      },
-      {
-        "text": "You are in open forest, with a deep valley to one side.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Road]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Forest",
-        "pid": "2",
-        "position": {
-          "x": "187",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are inside a building, a well house for a large spring.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Road]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Road",
-            "pid": "1"
-          }
-        ],
-        "name": "Building",
-        "pid": "3",
-        "position": {
-          "x": "337",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are in a valley in the forest beside a stream tumbling along a rocky bed.\n\n[[Go North->Road]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Valley",
-        "pid": "4",
-        "position": {
-          "x": "487",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You have walked up a hill, still in the forest.  The road slopes back\ndown the other side of the hill.  There is a building in the distance.\n\n[[Go North->Forest]]\n[[Go East->Road]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Hill",
-        "pid": "5",
-        "position": {
-          "x": "637",
-          "y": "339"
-        }
+      ],
+      "name": "Ye Ole Tavern",
+      "pid": "1",
+      "position": {
+        "x": "399",
+        "y": "200.5"
       }
-    ],
-    "name": "Adventure",
-    "startnode": "1",
-    "creator": "Twine",
-    "creator-version": "2.3.7",
-    "ifid": "1A8FFB75-8072-4382-BCAF-ADFA65B09385"
-  }
+    },
+    {
+      "text": "You approach the bar top, and the bartender comes out of a backroom.\nWould you like a drink?\n\nAsk for a Drink\nGo Left\nGo Right\nGo Back",
+      "links": [
+        {
+          "name": "Ask for a Drink ",
+          "link": " Drink",
+          "pid": "7"
+        },
+        {
+          "name": "Go Left",
+          "link": " Old Pictures",
+          "pid": "3"
+        },
+        {
+          "name": "Go Right",
+          "link": " Pool Table",
+          "pid": "4"
+        },
+        {
+          "name": "Go Back",
+          "link": "Ye Ole Tavern",
+          "pid": "1"
+        }
+      ],
+      "name": " Bar Top",
+      "pid": "2",
+      "position": {
+        "x": "399",
+        "y": "324.5"
+      }
+    },
+    {
+      "text": "You find a couple of old pictures:\nThe first is dated 1915 and appears to be when the tavern's original owners.\nThe second is dated 1948 and is a group of eight soldiers.\n\nAsk About The First\nAsk About The Second\nGo Right\nGo Back",
+      "links": [
+        {
+          "name": "Ask About The First ",
+          "link": " First Picture",
+          "pid": "5"
+        },
+        {
+          "name": "Ask About The Second ",
+          "link": " Second Picture",
+          "pid": "6"
+        },
+        {
+          "name": "Go Right ",
+          "link": " Bar Top",
+          "pid": "2"
+        },
+        {
+          "name": "Go Back ",
+          "link": "Ye Ole Tavern",
+          "pid": "1"
+        }
+      ],
+      "name": " Old Pictures",
+      "pid": "3",
+      "position": {
+        "x": "280",
+        "y": "200.5"
+      }
+    },
+    {
+      "text": "There's a pool table that appears to have been left in the middle of a game.  However, it's only you and the bartender in the tavern. There's a small hole in the wall and jukebox in the corner.\n\nGo to the Jukebox\nExamine the Hole\nGo Left\nGo Back\n\n",
+      "links": [
+        {
+          "name": "Go to the Jukebox ",
+          "link": " Jukebox",
+          "pid": "8"
+        },
+        {
+          "name": "Examine the Hole ",
+          "link": " Hole",
+          "pid": "9"
+        },
+        {
+          "name": "Go Left",
+          "link": " Bar Top",
+          "pid": "2"
+        },
+        {
+          "name": "Go Back ",
+          "link": "Ye Ole Tavern",
+          "pid": "1"
+        }
+      ],
+      "name": " Pool Table",
+      "pid": "4",
+      "position": {
+        "x": "523",
+        "y": "199.5"
+      }
+    },
+    {
+      "text": "The bartender tells you that the tavern was first opened in 1915 by two brothers.  He tells you about a little of the history.  He says that the tavern was very popular with the Italian-American mob in the late 80's.\n\nGo Back",
+      "links": [
+        {
+          "name": "Go Back ",
+          "link": " Old Pictures",
+          "pid": "3"
+        }
+      ],
+      "name": " First Picture",
+      "pid": "5",
+      "position": {
+        "x": "171",
+        "y": "72.5"
+      }
+    },
+    {
+      "text": "The bartender tells you that the two men in the middle of the picture were actually the sons of the original owners. They were fighting in World War II. \n\nGo Back",
+      "links": [
+        {
+          "name": "Go Back ",
+          "link": " Old Pictures",
+          "pid": "3"
+        }
+      ],
+      "name": " Second Picture",
+      "pid": "6",
+      "position": {
+        "x": "171",
+        "y": "323.5"
+      }
+    },
+    {
+      "text": "You get a drink.\n\nGo Back",
+      "links": [
+        {
+          "name": "Go Back ",
+          "link": " Bar Top",
+          "pid": "2"
+        }
+      ],
+      "name": " Drink",
+      "pid": "7",
+      "position": {
+        "x": "398",
+        "y": "446.5"
+      }
+    },
+    {
+      "text": "There's a jukebox, but it doesn't appear to be working.\n\nGo Back",
+      "links": [
+        {
+          "name": "Go Back ",
+          "link": " Pool Table",
+          "pid": "4"
+        }
+      ],
+      "name": " Jukebox",
+      "pid": "8",
+      "position": {
+        "x": "641",
+        "y": "76.5"
+      }
+    },
+    {
+      "text": "There's a small hole the size of a bullet.  Maybe something happened when the mob was still here?\n\nGo Back",
+      "links": [
+        {
+          "name": "Go Back",
+          "link": " Pool Table",
+          "pid": "4"
+        }
+      ],
+      "name": " Hole",
+      "pid": "9",
+      "position": {
+        "x": "645",
+        "y": "321.5"
+      }
+    }
+  ],
+  "name": "Tavern",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.9",
+  "ifid": "6EFC467A-2877-47C5-9DBB-4E9FB68B70AC"
+}
